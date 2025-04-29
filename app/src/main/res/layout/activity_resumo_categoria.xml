@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumoCategoria">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutResumo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBarResumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            style="?android:attr/progressBarStyleLarge" />
+
+        <TextView
+            android:id="@+id/textTotalMes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total do mês: "
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textResumoCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo por Categoria:"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textCategoriaMaiorGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria com maior gasto:"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:paddingTop="8dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
